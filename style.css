@@ -50,3 +50,8 @@ button {
     font-size: 20px;
     border-radius: 20%;
 }
+
+button:hover {
+    background-color: black;
+    color: white;
+}

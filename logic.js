@@ -42,17 +42,16 @@ document.addEventListener("DOMContentLoaded", function(){  // this event listene
 
     convertButton.addEventListener("click", function() {
     
-        let input = document.getElementById("inputNumber").value;
+        let input = document.getElementById("inputNumber");
         let output = document.getElementById("output");
         output.value = "";    // reset with new "click" 
 
-        if (!input) {
-            alert("Wrong input -> please provide a number");
+        let regex = /^[0-9]+$/g;  // only numbers are accepted
+        if (regex.test(input.value)) {
+            output.value = convertToRoman(input.value);
         } else {
-            output.value = convertToRoman(input);
+            alert("Wrong input -> please provide a number");
+            input.value = "";
         }
     });
 });   
-
-
-  
