@@ -1,4 +1,4 @@
-# Palindrome Checker
+# Roman Numeral Converter
 FreeCodeCamp: JavaScript Algorithms and Data Structures Projects - Roman Numeral Converter
 
 This page consists of a roman numeral converter tool i.e. it converts user given arabic numeral into a corresponding roman numeral.
